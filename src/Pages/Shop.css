@@ -1,0 +1,260 @@
+section.cart-section {
+  max-width: 100vw;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.cart-section > * {
+  max-width: var(--max-width);
+  margin: 0 auto !important;
+}
+
+section .cart-container,
+article .article-content,
+.bottom-header,
+footer.cart-footer-container {
+  margin: 0 100px;
+  padding-bottom: 60px;
+}
+
+.cart-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+img.bigImg {
+  position: relative;
+  margin-bottom: 10px;
+  width: 506px;
+  height: 546px;
+}
+
+img.smallOne {
+  width: 100px;
+  height: 75px;
+}
+
+.img-smallOne {
+  display: flex;
+  gap: 10px;
+}
+
+.chevronLeft {
+  position: absolute;
+  bottom: 40px;
+  left: 15%;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.chevronRight-s {
+  position: absolute;
+  bottom: 40px;
+  left: 42%;
+  color: rgba(255, 255, 255, 1);
+  cursor: pointer;
+}
+
+.cart-content-rate {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 5px;
+}
+
+.cart-content-text {
+  width: 510px;
+  height: 471px;
+  padding: 15px;
+}
+
+section h1 .cart-content-text_header {
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(37, 43, 66, 1);
+}
+
+.cart-rate-price {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-rate {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-rate-icons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+span.rate {
+  width: 18.34px;
+  height: 18.35px;
+}
+
+.bolder-text {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(115, 115, 115, 1);
+}
+
+span.rate-price,
+header.article-header,
+h4.bottom-header {
+  font-size: 24px;
+  font-weight: 700;
+  color: rgba(37, 43, 66, 1);
+}
+
+.rate-text-flex {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding-bottom: 100px;
+  border-bottom: 1px solid rgba(189, 189, 189, 1);
+}
+
+.price-text-two {
+  color: rgba(35, 166, 240, 1);
+}
+
+.cart-content-call {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-text-colours {
+  margin: 40px 0 100px 0;
+}
+
+span.round {
+  padding: 8px 16px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+span.one {
+  background-color: rgba(35, 166, 240, 1);
+}
+
+span.two {
+  background-color: rgba(45, 192, 113, 1);
+}
+span.three {
+  background-color: rgba(231, 124, 64, 1);
+}
+span.four {
+  background-color: rgba(37, 43, 66, 1);
+}
+
+.cart-call-to-action_react {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.action-icon {
+  color: rgba(37, 43, 66, 1);
+  padding: 8px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 232, 232, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+button.cart-btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(35, 166, 240, 1);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cart-btn:hover {
+  background-color: rgb(0, 86, 179, 1);
+}
+
+section .cart-about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+h1.cart-about-des {
+  font-weight: 600;
+}
+
+span.rev-number {
+  color: rgba(35, 133, 109, 1);
+}
+
+.cart-about-rev-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+article.cart-article-container {
+  max-width: var(--max-width);
+  margin: 0 auto !important;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+article .article-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 0;
+  border-top: 1px solid rgba(236, 236, 236, 1);
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  width: 50%;
+  padding-right: 25px;
+}
+
+header.article-header {
+  display: flex;
+  align-self: flex-start;
+}
+
+.smt {
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.article-p-two {
+  padding-left: 10px;
+  border-left: 3px solid rgba(35, 133, 109, 1);
+}
+
+section h4.bottom-header {
+  padding: 40px 0;
+}
+
+footer .cart-footer-container {
+  margin: 60px 100px;
+  padding-bottom: 60px;
+}
+
+footer .cart-footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
