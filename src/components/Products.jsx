@@ -5,7 +5,7 @@ import "./Products.css";
 import { useGetProductsWithLimitQuery } from "../app/slices/productSlice";
 
 const Products = () => {
-  let limit = 10;
+  let limit = 20;
   limit = Number(limit);
   const { data, isFetching } = useGetProductsWithLimitQuery({
     limit,
@@ -13,12 +13,7 @@ const Products = () => {
 
   return (
     <section className="all-product">
-      <div
-        // style={{
-        //   filter: isFetching ? "blur(5px)" : "",
-        // }}
-        className="section-product-content"
-      >
+      <div className="section-product-content">
         {data?.products?.map((item) => (
           <Link to={`/shop/${item?.id}`}>
             <div className="product-content-details">
