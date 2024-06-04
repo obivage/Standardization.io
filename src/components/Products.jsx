@@ -2,11 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./Products.css";
 
-
 import { useGetProductsWithLimitQuery } from "../app/slices/productSlice";
 
 const Products = () => {
-  let limit = 20;
+  let limit = 10;
   limit = Number(limit);
   const { data, isFetching } = useGetProductsWithLimitQuery({
     limit,
@@ -15,9 +14,9 @@ const Products = () => {
   return (
     <section className="all-product">
       <div
-        style={{
-          filter: isFetching ? "blur(5px)" : "",
-        }}
+        // style={{
+        //   filter: isFetching ? "blur(5px)" : "",
+        // }}
         className="section-product-content"
       >
         {data?.products?.map((item) => (

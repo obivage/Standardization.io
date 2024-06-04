@@ -29,10 +29,23 @@ import customerSeven from "../assets/customerSeven.png";
 import customerEight from "../assets/customerEight.png";
 import customerNine from "../assets/customerNine.png";
 import background from "../assets/background.png";
+// import productOne from "../assets/productOne.png";
+// import productTwo from "../assets/productTwo.png";
+// import productThree from "../assets/productThree.png";
+// import productFour from "../assets/productFour.png";
+// import productFive from "../assets/productFive.png";
+// import productSix from "../assets/productSix.png";
+// import productSeven from "../assets/productSeven.png";
+// import productEight from "../assets/productEight.png";
+// import productNine from "../assets/productNine.png";
+// import productTen from "../assets/productTen.png";
 
 import "./landingPage.css";
 import { useGetProductsWithLimitQuery } from "../app/slices/productSlice";
 
+const VITE_BASE_URL = "https://dummyjson.com/products";
+
+// const VITE_BASE_URL= https://dummyjson.com/products
 const LandingPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   let limit = searchParams.get("limit") ?? 10;
@@ -74,9 +87,9 @@ const LandingPage = () => {
             </h3>
           </header>
           <div
-            style={{
-              filter: isFetching ? "blur(5px)" : "",
-            }}
+            // style={{
+            //   filter: isFetching ? "blur(5px)" : "",
+            // }}
             className="section-product-content"
           >
             {data?.products?.map((item) => (
@@ -95,8 +108,8 @@ const LandingPage = () => {
                       {item?.brand}
                     </p>
                     <div className="product-content-price">
-                      <span className="product-priceOne">N{item?.price}</span>
-                      <span className="product-priceTwo">N{item?.price}</span>
+                      <span className="product-priceOne">{item?.price}</span>
+                      <span className="product-priceTwo">{item?.price}</span>
                     </div>
                   </div>
                 </div>
